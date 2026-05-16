@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Diagnóstico de Enfermedades</title>
+</head>
+<body>
+
+    <h2>Sistema de Diagnóstico con NLP</h2>
+
+    <!-- BOTÓN -->
+    <form action="/prediccion/" method="post">
+        {% csrf_token %}
+        <button type="submit" style="padding:10px 20px; font-size:16px;">
+            Entrenar modelo y predecir
+        </button>
+    </form>
+
+    <hr>
+
+    <!-- MÉTRICAS (solo si existen) -->
+    {% if metricas %}
+        <h3>Métricas del modelo</h3>
+        <p><strong>Accuracy:</strong> {{ metricas.accuracy }}</p>
+        <p><strong>Balanced Accuracy:</strong> {{ metricas.balanced_accuracy }}</p>
+        <p><strong>Macro Precision:</strong> {{ metricas.precision_macro }}</p>
+        <p><strong>Macro Recall:</strong> {{ metricas.recall_macro }}</p>
+        <p><strong>Macro F1:</strong> {{ metricas.f1_macro }}</p>
+        <p><strong>Weighted F1:</strong> {{ metricas.f1_weighted }}</p>
+        <p><strong>Top-3 Accuracy:</strong> {{ metricas.top3_accuracy }}</p>
+    {% endif %}
+
+    <!-- TABLA -->
+    {% if prediccion %}
+        <h3>Primeros 50 resultados</h3>
+
+        <table border="1" cellpadding="6">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Real</th>
+                    <th>Predicho</th>
+                    <th>Confianza</th>
+                    <th>Acierto</th>
+                    <th>Top 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for fila in prediccion %}
+                <tr>
+                    <td>{{ fila.id }}</td>
+                    <td>{{ fila.real }}</td>
+                    <td>
+                        {% if fila.acierto == "Sí" %}
+                            <span style="color:green"><strong>{{ fila.predicho }}</strong></span>
+                        {% else %}
+                            <span style="color:red"><strong>{{ fila.predicho }}</strong></span>
+                        {% endif %}
+                    </td>
+                    <td>{{ fila.confianza|floatformat:4 }}</td>
+                    <td>{{ fila.acierto }}</td>
+                    <td>
+                        {% for item in fila.top3 %}
+                            {{ item.enfermedad }} ({{ item.probabilidad|floatformat:3 }})<br>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+</body>
+</html>
