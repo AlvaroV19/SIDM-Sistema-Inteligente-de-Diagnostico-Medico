@@ -1,7 +1,10 @@
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-tensorflow
-nltk
+django==4.1
+numpy==2.4.4
+pandas==3.0.2
+matplotlib==3.10.9
+seaborn==0.13.2
+scikit-learn==1.8.0
+tensorflow==2.20.0
+nltk==3.9.4
+transformers==4.57.6
+tf-keras==2.19.0

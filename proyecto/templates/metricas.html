@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Métricas del Modelo - SIDM</title>
+    <style>
+        body{font-family: Arial, sans-serif; padding: 20px; background:#f6f7fb}
+        .card{max-width:900px;margin:0 auto;background:white;padding:24px;border-radius:8px}
+        h1{margin-bottom:10px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+        .item{background:#f8f9fa;padding:12px;border-radius:6px}
+        .item h4{margin:0 0 6px 0;font-size:13px;color:#333}
+        .item p{margin:0;font-size:18px;font-weight:700;color:#1f4b8f}
+        .center{text-align:center;margin-top:20px}
+        a.btn{display:inline-block;padding:10px 18px;background:#667eea;color:white;border-radius:6px;text-decoration:none}
+    </style>
+</head>
+<body>
+<div class="card">
+    {% if error %}
+        <h1>⚠️ Error</h1>
+        <p>{{ error }}</p>
+        <div class="center"><a class="btn" href="/">Volver</a></div>
+    {% else %}
+        <h1>📊 Métricas guardadas</h1>
+        {% if metricas %}
+            <div class="grid">
+                <div class="item"><h4>Accuracy</h4><p>{{ metricas.accuracy }}</p></div>
+                <div class="item"><h4>Balanced Accuracy</h4><p>{{ metricas.balanced_accuracy }}</p></div>
+                <div class="item"><h4>Precision (Macro)</h4><p>{{ metricas.precision_macro }}</p></div>
+                <div class="item"><h4>Recall (Macro)</h4><p>{{ metricas.recall_macro }}</p></div>
+                <div class="item"><h4>F1 (Macro)</h4><p>{{ metricas.f1_macro }}</p></div>
+                <div class="item"><h4>Top-3 Accuracy</h4><p>{{ metricas.top3_accuracy }}</p></div>
+            </div>
+        {% endif %}
+
+        {% if clases %}
+            <h3 style="margin-top:20px">Clases</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+                {% for c in clases %}
+                    <div style="background:#eef2ff;padding:6px 10px;border-radius:6px">{{ c }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="center" style="margin-top:24px">
+            <a class="btn" href="/">Volver</a>
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>

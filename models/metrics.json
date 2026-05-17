@@ -1,0 +1,5191 @@
+{
+  "metricas": {
+    "accuracy": 0.9762,
+    "balanced_accuracy": 0.968,
+    "precision_macro": 0.9697,
+    "recall_macro": 0.968,
+    "f1_macro": 0.9681,
+    "precision_weighted": 0.9775,
+    "recall_weighted": 0.9762,
+    "f1_weighted": 0.9763,
+    "top3_accuracy": 0.998,
+    "loss_train_final": 0.1401,
+    "accuracy_train_final": 1.0,
+    "val_loss_final": 0.1749,
+    "val_accuracy_final": 0.9787
+  },
+  "matriz_confusion": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      144
+    ]
+  ],
+  "matriz_confusion_etiquetada": [
+    {
+      "real": "Acné",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Alergia",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Artritis",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Asma Bronquial",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Dengue",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 13,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 2,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Diabetes",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Enfermedad por Reflujo Gastroesofágico",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Espondilosis Cervical",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Fiebre Tifoidea",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Hemorroides Dimórficas",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Hipertensión",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Ictericia",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Impétigo",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Infección Fúngica",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Infección del Tracto Urinario",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Malaria",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Migraña",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Neumonía",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Psoriasis",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Reacción a Medicamentos",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 13,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Resfriado Común",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Varicela",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 1,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 14,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Venas Varicosas",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 15,
+          "es_diagonal": true
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": "Úlcera Péptica",
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 2,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 13,
+          "es_diagonal": true
+        },
+        {
+          "pred": NaN,
+          "valor": 0,
+          "es_diagonal": false
+        }
+      ]
+    },
+    {
+      "real": NaN,
+      "valores": [
+        {
+          "pred": "Acné",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Alergia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Artritis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Asma Bronquial",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Dengue",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Diabetes",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Enfermedad por Reflujo Gastroesofágico",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Espondilosis Cervical",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Fiebre Tifoidea",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hemorroides Dimórficas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Hipertensión",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Ictericia",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Impétigo",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección Fúngica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Infección del Tracto Urinario",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Malaria",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Migraña",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Neumonía",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Psoriasis",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Reacción a Medicamentos",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Resfriado Común",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Varicela",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Venas Varicosas",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": "Úlcera Péptica",
+          "valor": 0,
+          "es_diagonal": false
+        },
+        {
+          "pred": NaN,
+          "valor": 144,
+          "es_diagonal": true
+        }
+      ]
+    }
+  ],
+  "reporte_clasificacion": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "1": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9333333333333333,
+      "support": 15.0
+    },
+    "2": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "3": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "4": {
+      "precision": 0.9285714285714286,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.896551724137931,
+      "support": 15.0
+    },
+    "5": {
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1-score": 0.967741935483871,
+      "support": 15.0
+    },
+    "6": {
+      "precision": 0.8823529411764706,
+      "recall": 1.0,
+      "f1-score": 0.9375,
+      "support": 15.0
+    },
+    "7": {
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1-score": 0.967741935483871,
+      "support": 15.0
+    },
+    "8": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
+    },
+    "9": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "10": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "11": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "12": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "13": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
+    },
+    "14": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "15": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "16": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "17": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
+    },
+    "18": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "19": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.9285714285714286,
+      "support": 15.0
+    },
+    "20": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9333333333333333,
+      "support": 15.0
+    },
+    "21": {
+      "precision": 0.8235294117647058,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.875,
+      "support": 15.0
+    },
+    "22": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "23": {
+      "precision": 0.8666666666666667,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.8666666666666667,
+      "support": 15.0
+    },
+    "24": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 144.0
+    },
+    "accuracy": 0.9761904761904762,
+    "macro avg": {
+      "precision": 0.9697114845938376,
+      "recall": 0.9680000000000001,
+      "f1-score": 0.9681196832459347,
+      "support": 504.0
+    },
+    "weighted avg": {
+      "precision": 0.9774639022275576,
+      "recall": 0.9761904761904762,
+      "f1-score": 0.9762795262246537,
+      "support": 504.0
+    }
+  },
+  "prediccion": [
+    {
+      "id": 1,
+      "real": "Hipertensión",
+      "predicho": "Hipertensión",
+      "confianza": 0.9092463850975037,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.9092463850975037
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.008753327652812004
+        },
+        {
+          "enfermedad": "Fiebre Tifoidea",
+          "probabilidad": 0.006992384325712919
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "real": "Hipertensión",
+      "predicho": "Hipertensión",
+      "confianza": 0.9084813594818115,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.9084813594818115
+        },
+        {
+          "enfermedad": "Fiebre Tifoidea",
+          "probabilidad": 0.009327758103609085
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.008913524448871613
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "real": "Hipertensión",
+      "predicho": "Hipertensión",
+      "confianza": 0.9095913171768188,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.9095913171768188
+        },
+        {
+          "enfermedad": "Fiebre Tifoidea",
+          "probabilidad": 0.007182713598012924
+        },
+        {
+          "enfermedad": "Espondilosis Cervical",
+          "probabilidad": 0.0068366373889148235
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "real": "Diabetes",
+      "predicho": "Diabetes",
+      "confianza": 0.8673465847969055,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.8673465847969055
+        },
+        {
+          "enfermedad": "Reacción a Medicamentos",
+          "probabilidad": 0.012329114601016045
+        },
+        {
+          "enfermedad": "Venas Varicosas",
+          "probabilidad": 0.011905509978532791
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "real": "Malaria",
+      "predicho": "Malaria",
+      "confianza": 0.92435222864151,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Malaria",
+          "probabilidad": 0.92435222864151
+        },
+        {
+          "enfermedad": "Dengue",
+          "probabilidad": 0.006485083606094122
+        },
+        {
+          "enfermedad": "Espondilosis Cervical",
+          "probabilidad": 0.005779295228421688
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "real": "Enfermedad por Reflujo Gastroesofágico",
+      "predicho": "Enfermedad por Reflujo Gastroesofágico",
+      "confianza": 0.8305858969688416,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Enfermedad por Reflujo Gastroesofágico",
+          "probabilidad": 0.8305858969688416
+        },
+        {
+          "enfermedad": "Alergia",
+          "probabilidad": 0.04452838748693466
+        },
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.020403850823640823
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "real": "Neumonía",
+      "predicho": "Resfriado Común",
+      "confianza": 0.4013183116912842,
+      "acierto": "No",
+      "top3": [
+        {
+          "enfermedad": "Resfriado Común",
+          "probabilidad": 0.4013183116912842
+        },
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.30730441212654114
+        },
+        {
+          "enfermedad": "Asma Bronquial",
+          "probabilidad": 0.04714086279273033
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "real": "Asma Bronquial",
+      "predicho": "Asma Bronquial",
+      "confianza": 0.8625414371490479,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Asma Bronquial",
+          "probabilidad": 0.8625414371490479
+        },
+        {
+          "enfermedad": "Resfriado Común",
+          "probabilidad": 0.02143639139831066
+        },
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.020737161859869957
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "real": "Neumonía",
+      "predicho": "Neumonía",
+      "confianza": 0.9176889657974243,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.9176889657974243
+        },
+        {
+          "enfermedad": "Resfriado Común",
+          "probabilidad": 0.007317273877561092
+        },
+        {
+          "enfermedad": "Asma Bronquial",
+          "probabilidad": 0.0067816562950611115
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "real": "Ictericia",
+      "predicho": "Ictericia",
+      "confianza": 0.9180153012275696,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Ictericia",
+          "probabilidad": 0.9180153012275696
+        },
+        {
+          "enfermedad": "Malaria",
+          "probabilidad": 0.007001460529863834
+        },
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.005849411711096764
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "real": "Migraña",
+      "predicho": "Migraña",
+      "confianza": 0.916996955871582,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Migraña",
+          "probabilidad": 0.916996955871582
+        },
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.007333795540034771
+        },
+        {
+          "enfermedad": "Espondilosis Cervical",
+          "probabilidad": 0.005827553104609251
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "real": "Migraña",
+      "predicho": "Migraña",
+      "confianza": 0.9114143252372742,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Migraña",
+          "probabilidad": 0.9114143252372742
+        },
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.010133713483810425
+        },
+        {
+          "enfermedad": "Malaria",
+          "probabilidad": 0.005428993608802557
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "real": "Ictericia",
+      "predicho": "Ictericia",
+      "confianza": 0.9150913953781128,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Ictericia",
+          "probabilidad": 0.9150913953781128
+        },
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.006530726328492165
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.005743672139942646
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "real": "Reacción a Medicamentos",
+      "predicho": "Reacción a Medicamentos",
+      "confianza": 0.26590827107429504,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Reacción a Medicamentos",
+          "probabilidad": 0.26590827107429504
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.20602960884571075
+        },
+        {
+          "enfermedad": "Resfriado Común",
+          "probabilidad": 0.1343327760696411
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "real": "Impétigo",
+      "predicho": "Impétigo",
+      "confianza": 0.9215177893638611,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Impétigo",
+          "probabilidad": 0.9215177893638611
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.005173420999199152
+        },
+        {
+          "enfermedad": "Dengue",
+          "probabilidad": 0.005082767456769943
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "real": "Infección Fúngica",
+      "predicho": "Infección Fúngica",
+      "confianza": 0.9186801910400391,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.9186801910400391
+        },
+        {
+          "enfermedad": "Acné",
+          "probabilidad": 0.00838649645447731
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.008153757080435753
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "real": "Neumonía",
+      "predicho": "Neumonía",
+      "confianza": 0.9165816903114319,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.9165816903114319
+        },
+        {
+          "enfermedad": "Asma Bronquial",
+          "probabilidad": 0.00785195454955101
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0068641952238976955
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "real": "Acné",
+      "predicho": "Acné",
+      "confianza": 0.9312251210212708,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Acné",
+          "probabilidad": 0.9312251210212708
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0057310382835567
+        },
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.004572905134409666
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "real": "Impétigo",
+      "predicho": "Impétigo",
+      "confianza": 0.9104554653167725,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Impétigo",
+          "probabilidad": 0.9104554653167725
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.010334635153412819
+        },
+        {
+          "enfermedad": "Venas Varicosas",
+          "probabilidad": 0.007392877712845802
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "real": "Hipertensión",
+      "predicho": "Hipertensión",
+      "confianza": 0.8619623184204102,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.8619623184204102
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.030367515981197357
+        },
+        {
+          "enfermedad": "Migraña",
+          "probabilidad": 0.012610216625034809
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "real": "Hemorroides Dimórficas",
+      "predicho": "Hemorroides Dimórficas",
+      "confianza": 0.8988959789276123,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.8988959789276123
+        },
+        {
+          "enfermedad": "Artritis",
+          "probabilidad": 0.008749150671064854
+        },
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.008472733199596405
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "real": "Enfermedad por Reflujo Gastroesofágico",
+      "predicho": "Enfermedad por Reflujo Gastroesofágico",
+      "confianza": 0.85360187292099,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Enfermedad por Reflujo Gastroesofágico",
+          "probabilidad": 0.85360187292099
+        },
+        {
+          "enfermedad": "Alergia",
+          "probabilidad": 0.028200726956129074
+        },
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.024831945076584816
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "real": "Alergia",
+      "predicho": "Alergia",
+      "confianza": 0.8531693816184998,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Alergia",
+          "probabilidad": 0.8531693816184998
+        },
+        {
+          "enfermedad": "Reacción a Medicamentos",
+          "probabilidad": 0.020009033381938934
+        },
+        {
+          "enfermedad": "Enfermedad por Reflujo Gastroesofágico",
+          "probabilidad": 0.013442253693938255
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "real": "Úlcera Péptica",
+      "predicho": "Úlcera Péptica",
+      "confianza": 0.8541150689125061,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.8541150689125061
+        },
+        {
+          "enfermedad": "Infección del Tracto Urinario",
+          "probabilidad": 0.020486824214458466
+        },
+        {
+          "enfermedad": "Enfermedad por Reflujo Gastroesofágico",
+          "probabilidad": 0.02005353383719921
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "real": "Infección Fúngica",
+      "predicho": "Infección Fúngica",
+      "confianza": 0.9186505079269409,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.9186505079269409
+        },
+        {
+          "enfermedad": "Acné",
+          "probabilidad": 0.006761789321899414
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.006118469405919313
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "real": "Impétigo",
+      "predicho": "Impétigo",
+      "confianza": 0.895817756652832,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Impétigo",
+          "probabilidad": 0.895817756652832
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.011711460538208485
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0109053710475564
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "real": "Hipertensión",
+      "predicho": "Hipertensión",
+      "confianza": 0.9070548415184021,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Hipertensión",
+          "probabilidad": 0.9070548415184021
+        },
+        {
+          "enfermedad": "Diabetes",
+          "probabilidad": 0.008469020016491413
+        },
+        {
+          "enfermedad": "Fiebre Tifoidea",
+          "probabilidad": 0.00717616081237793
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "real": "Infección del Tracto Urinario",
+      "predicho": "Infección del Tracto Urinario",
+      "confianza": 0.905350923538208,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Infección del Tracto Urinario",
+          "probabilidad": 0.905350923538208
+        },
+        {
+          "enfermedad": "Úlcera Péptica",
+          "probabilidad": 0.010735447518527508
+        },
+        {
+          "enfermedad": "Ictericia",
+          "probabilidad": 0.0062165637500584126
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "real": "Impétigo",
+      "predicho": "Impétigo",
+      "confianza": 0.924396276473999,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Impétigo",
+          "probabilidad": 0.924396276473999
+        },
+        {
+          "enfermedad": "Dengue",
+          "probabilidad": 0.005120938178151846
+        },
+        {
+          "enfermedad": "Psoriasis",
+          "probabilidad": 0.005048909690231085
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "real": "Resfriado Común",
+      "predicho": "Resfriado Común",
+      "confianza": 0.8888691067695618,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": "Resfriado Común",
+          "probabilidad": 0.8888691067695618
+        },
+        {
+          "enfermedad": "Alergia",
+          "probabilidad": 0.012700245715677738
+        },
+        {
+          "enfermedad": "Neumonía",
+          "probabilidad": 0.009799347259104252
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "real": NaN,
+      "predicho": NaN,
+      "confianza": 0.9885680079460144,
+      "acierto": "Sí",
+      "top3": [
+        {
+          "enfermedad": NaN,
+          "probabilidad": 0.9885680079460144
+        },
+        {
+          "enfermedad": "Hemorroides Dimórficas",
+          "probabilidad": 0.0008160494035109878
+        },
+        {
+          "enfermedad": "Infección Fúngica",
+          "probabilidad": 0.0007760938606224954
+        }
+      ]
+    }
+  ],
+  "clases": [
+    "Acné",
+    "Alergia",
+    "Artritis",
+    "Asma Bronquial",
+    "Dengue",
+    "Diabetes",
+    "Enfermedad por Reflujo Gastroesofágico",
+    "Espondilosis Cervical",
+    "Fiebre Tifoidea",
+    "Hemorroides Dimórficas",
+    "Hipertensión",
+    "Ictericia",
+    "Impétigo",
+    "Infección Fúngica",
+    "Infección del Tracto Urinario",
+    "Malaria",
+    "Migraña",
+    "Neumonía",
+    "Psoriasis",
+    "Reacción a Medicamentos",
+    "Resfriado Común",
+    "Varicela",
+    "Venas Varicosas",
+    "Úlcera Péptica",
+    NaN
+  ],
+  "timestamp": "2026-05-16T16:46:10.347511"
+}
