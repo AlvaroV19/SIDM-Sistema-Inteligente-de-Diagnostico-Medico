@@ -77,7 +77,7 @@ import pickle
 import json
 
 MODEL_DIR = os.path.expanduser(
-    "~/Documentos/PROJECTS/IA/SIDM — Sistema Inteligente de Diagnóstico Médico"
+    "~/Documentos/PROJECTS/IA/SIDM"
     "/django_deep_learning/models"
 )
 
@@ -92,6 +92,19 @@ METRICS_PATH = os.path.join(MODEL_DIR, "metrics.json")
 # ══════════════════════════════════════════════════════════════════════════════
 # BLOQUE 1 — Limpieza de texto
 # ══════════════════════════════════════════════════════════════════════════════
+
+def normalizar_reporte(report: dict) -> dict:
+    """Renombra claves con guion/espacio para que Django templates pueda accederlas."""
+    nuevo = {}
+    for k, v in report.items():
+        nueva_k = k.replace("-", "_").replace(" ", "_")
+        if isinstance(v, dict):
+            nuevo[nueva_k] = {
+                ik.replace("-", "_"): iv for ik, iv in v.items()
+            }
+        else:
+            nuevo[nueva_k] = v
+    return nuevo
 
 def limpiar_texto(texto: str) -> str:
     """
@@ -412,8 +425,7 @@ def entrenar(request):
 
     # ── 1. Carga del dataset ──────────────────────────────────────────────
     base_path = os.path.expanduser(
-        "~/Documentos/PROJECTS/IA/SIDM — Sistema Inteligente de Diagnóstico Médico"
-        "/django_deep_learning/proyecto/dataset/"
+        "C:/Users/alvar/OneDrive/Escritorio/9no Semestre/Inteligencia Artificial/Proyecto IA/Version Final/SIDM/django_deep_learning/proyecto/dataset"
     )
 
     csv = pd.read_csv(f"{base_path}/ENFERMEDADES_SINTOMAS.csv")
@@ -440,7 +452,7 @@ def entrenar(request):
         y_train,
         validation_split=0.2,
         batch_size=16,
-        epochs=6,
+        epochs=5,
         callbacks=[
             tf.keras.callbacks.EarlyStopping(
                 monitor="val_loss",
@@ -466,6 +478,7 @@ def entrenar(request):
     )
 
     report = classification_report(y_test, y_pred, output_dict=True, zero_division=0)
+    report = normalizar_reporte(report)
     cm     = confusion_matrix(y_test, y_pred)
 
     # ── 6. Nombres de clases ──────────────────────────────────────────────
@@ -642,9 +655,14 @@ def mostrar_metricas(request):
     try:
         with open(METRICS_PATH, "r", encoding="utf-8") as f:
             metrics_bundle = json.load(f)
+
+        if "reporte_clasificacion" in metrics_bundle:
+            metrics_bundle["reporte_clasificacion"] = normalizar_reporte(
+                metrics_bundle["reporte_clasificacion"]
+            )
+    
     except Exception as e:
         context = {"error": f"Error al leer métricas: {e}"}
         return render(request, "metricas.html", context=context)
 
     return render(request, "metricas.html", context=metrics_bundle)
-    

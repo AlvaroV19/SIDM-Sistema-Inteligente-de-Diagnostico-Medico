@@ -5,49 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Métricas del Modelo - SIDM</title>
     <style>
-        body{font-family: Arial, sans-serif; padding: 20px; background:#f6f7fb}
-        .card{max-width:900px;margin:0 auto;background:white;padding:24px;border-radius:8px}
-        h1{margin-bottom:10px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-        .item{background:#f8f9fa;padding:12px;border-radius:6px}
-        .item h4{margin:0 0 6px 0;font-size:13px;color:#333}
-        .item p{margin:0;font-size:18px;font-weight:700;color:#1f4b8f}
-        .center{text-align:center;margin-top:20px}
-        a.btn{display:inline-block;padding:10px 18px;background:#667eea;color:white;border-radius:6px;text-decoration:none}
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; margin: 0; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); padding: 24px; }
+        h1, h2, h3 { color: #1e293b; margin-top: 1.5em; }
+        .grid-metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+        .metric-card { background: #f8fafc; border-radius: 12px; padding: 16px; text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .metric-card h4 { margin: 0 0 8px; font-size: 14px; color: #475569; }
+        .metric-card p { margin: 0; font-size: 28px; font-weight: 700; color: #2563eb; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: left; vertical-align: top; }
+        th { background: #f1f5f9; font-weight: 600; }
+        .matriz-container { overflow-x: auto; margin: 20px 0; }
+        .matriz-table td, .matriz-table th { text-align: center; white-space: nowrap; }
+        .diagonal { background-color: #dcfce7; font-weight: bold; }
+        .prediccion-item { background: #fefce8; margin-bottom: 12px; padding: 12px; border-radius: 8px; border-left: 4px solid #eab308; }
+        .acierto-si { color: #16a34a; font-weight: bold; }
+        .acierto-no { color: #dc2626; font-weight: bold; }
+        .badge { background: #e2e8f0; padding: 2px 8px; border-radius: 20px; font-size: 12px; }
+        .top3 { font-size: 13px; margin-top: 8px; color: #4b5563; }
+        .btn { display: inline-block; background: #3b82f6; color: white; padding: 10px 20px; border-radius: 40px; text-decoration: none; margin-top: 20px; }
+        .btn:hover { background: #2563eb; }
+        footer { text-align: center; margin-top: 40px; }
+
+        /* ── Tabla de predicciones ── */
+        .pred-table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid #e2e8f0; margin: 16px 0; }
+        .pred-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .pred-table thead th { background: #f1f5f9; padding: 10px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #475569; white-space: nowrap; border-bottom: 1px solid #e2e8f0; text-align: left; }
+        .pred-table tbody tr { border-bottom: 1px solid #e2e8f0; transition: background .15s; }
+        .pred-table tbody tr:last-child { border-bottom: none; }
+        .pred-table tbody tr:hover { background: #f8fafc; }
+        .pred-table tbody tr.row-hit  { border-left: 3px solid #22c55e; }
+        .pred-table tbody tr.row-miss { border-left: 3px solid #ef4444; }
+        .pred-table td { padding: 10px 14px; vertical-align: middle; border: none; }
+        .pred-num { font-size: 11px; color: #94a3b8; }
+        .pred-disease { font-weight: 600; color: #1e293b; white-space: nowrap; }
+        .pred-disease.wrong { color: #ef4444; }
+        .badge-hit  { display:inline-block; background:rgba(34,197,94,.12); color:#16a34a; font-size:11px; font-weight:700; padding:2px 10px; border-radius:20px; }
+        .badge-miss { display:inline-block; background:rgba(239,68,68,.10); color:#dc2626; font-size:11px; font-weight:700; padding:2px 10px; border-radius:20px; }
+        .conf-inner { display:flex; align-items:center; gap:8px; min-width:130px; }
+        .conf-track { flex:1; height:5px; background:#e2e8f0; border-radius:3px; overflow:hidden; min-width:60px; }
+        .conf-fill     { height:100%; border-radius:3px; background:linear-gradient(90deg,#3b82f6,#6366f1); }
+        .conf-fill.low { background:linear-gradient(90deg,#ef4444,#f97316); }
+        .conf-num     { font-size:11px; color:#64748b; min-width:36px; text-align:right; }
+        .conf-num.low { color:#ef4444; font-weight:600; }
+        .top3-chips { display:flex; gap:4px; flex-wrap:wrap; }
+        .top3-chip  { font-size:11px; padding:2px 8px; border-radius:4px; border:1px solid #e2e8f0; color:#64748b; background:#f8fafc; white-space:nowrap; }
+        .top3-chip.first { border-color:#93c5fd; color:#2563eb; font-weight:700; }
     </style>
 </head>
 <body>
-<div class="card">
+<div class="container">
     {% if error %}
         <h1>⚠️ Error</h1>
         <p>{{ error }}</p>
-        <div class="center"><a class="btn" href="/">Volver</a></div>
+        <a class="btn" href="/">Volver</a>
     {% else %}
-        <h1>📊 Métricas guardadas</h1>
-        {% if metricas %}
-            <div class="grid">
-                <div class="item"><h4>Accuracy</h4><p>{{ metricas.accuracy }}</p></div>
-                <div class="item"><h4>Balanced Accuracy</h4><p>{{ metricas.balanced_accuracy }}</p></div>
-                <div class="item"><h4>Precision (Macro)</h4><p>{{ metricas.precision_macro }}</p></div>
-                <div class="item"><h4>Recall (Macro)</h4><p>{{ metricas.recall_macro }}</p></div>
-                <div class="item"><h4>F1 (Macro)</h4><p>{{ metricas.f1_macro }}</p></div>
-                <div class="item"><h4>Top-3 Accuracy</h4><p>{{ metricas.top3_accuracy }}</p></div>
-            </div>
+        <h1>📊 Métricas del modelo BETO</h1>
+        <p><strong>Timestamp:</strong> {{ timestamp }}</p>
+
+        <!-- Métricas generales -->
+        <h2>📈 Resumen de rendimiento</h2>
+        <div class="grid-metrics">
+            <div class="metric-card"><h4>Accuracy</h4><p>{{ metricas.accuracy }}</p></div>
+            <div class="metric-card"><h4>Balanced Acc</h4><p>{{ metricas.balanced_accuracy }}</p></div>
+            <div class="metric-card"><h4>Precision (macro)</h4><p>{{ metricas.precision_macro }}</p></div>
+            <div class="metric-card"><h4>Recall (macro)</h4><p>{{ metricas.recall_macro }}</p></div>
+            <div class="metric-card"><h4>F1 (macro)</h4><p>{{ metricas.f1_macro }}</p></div>
+            <div class="metric-card"><h4>Top-3 Accuracy</h4><p>{{ metricas.top3_accuracy }}</p></div>
+            <div class="metric-card"><h4>Loss final (train)</h4><p>{{ metricas.loss_train_final }}</p></div>
+            <div class="metric-card"><h4>Val Accuracy final</h4><p>{{ metricas.val_accuracy_final }}</p></div>
+        </div>
+
+        <!-- Matriz de confusión -->
+        {% if matriz_confusion_etiquetada %}
+        <h2>🧮 Matriz de confusión</h2>
+        <div class="matriz-container">
+            <table class="matriz-table">
+                <thead>
+                    <tr>
+                        <th>Real \ Predicho</th>
+                        {% for clase in clases %}
+                            <th>{{ clase|truncatechars:15 }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for fila in matriz_confusion_etiquetada %}
+                    <tr>
+                        <th style="background:#f1f5f9">{{ fila.real|truncatechars:20 }}</th>
+                        {% for celda in fila.valores %}
+                            <td class="{% if celda.es_diagonal %}diagonal{% endif %}">
+                                {{ celda.valor }}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
         {% endif %}
 
-        {% if clases %}
-            <h3 style="margin-top:20px">Clases</h3>
-            <div style="display:flex;flex-wrap:wrap;gap:8px">
-                {% for c in clases %}
-                    <div style="background:#eef2ff;padding:6px 10px;border-radius:6px">{{ c }}</div>
+        <!-- Reporte de clasificación -->
+        {% if reporte_clasificacion %}
+        <h2>📋 Reporte por clase</h2>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr><th>Enfermedad</th><th>Precisión</th><th>Recall</th><th>F1-score</th><th>Soporte</th></tr>
+                </thead>
+                <tbody>
+                    {% for key, valores in reporte_clasificacion.items %}
+                        {% if key != 'accuracy' and key != 'macro avg' and key != 'weighted avg' %}
+                            <tr>
+                                <td>{{ key }}</td>
+                                <td>{{ valores.precision|floatformat:3 }}</td>
+                                <td>{{ valores.recall|floatformat:3 }}</td>
+                                <td>{{ valores.f1_score|floatformat:3 }}</td>
+                                <td>{{ valores.support }}</td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                    <tr style="background:#f1f5f9; font-weight:bold;">
+                        <td>Macro avg</td>
+                        <td>{{ reporte_clasificacion.macro_avg.precision|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.macro_avg.recall|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.macro_avg.f1_score|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.macro_avg.support }}</td>
+                    </tr>
+                    <tr style="background:#f1f5f9; font-weight:bold;">
+                        <td>Weighted avg</td>
+                        <td>{{ reporte_clasificacion.weighted_avg.precision|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.weighted_avg.recall|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.weighted_avg.f1_score|floatformat:3 }}</td>
+                        <td>{{ reporte_clasificacion.weighted_avg.support }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+
+        <!-- Predicciones -->
+        {% if prediccion %}
+        <h2>🔍 Primeras 50 predicciones</h2>
+        <div class="pred-table-wrap">
+            <table class="pred-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Estado</th>
+                        <th>Diagnóstico real</th>
+                        <th>Predicho</th>
+                        <th>Confianza</th>
+                        <th>Top 3 probabilidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for pred in prediccion %}
+                    <tr class="{% if pred.acierto == 'Sí' %}row-hit{% else %}row-miss{% endif %}">
+                        <td><span class="pred-num">{{ pred.id }}</span></td>
+                        <td>
+                            {% if pred.acierto == 'Sí' %}
+                                <span class="badge-hit">✓ Correcto</span>
+                            {% else %}
+                                <span class="badge-miss">✗ Error</span>
+                            {% endif %}
+                        </td>
+                        <td><span class="pred-disease">{{ pred.real }}</span></td>
+                        <td>
+                            <span class="pred-disease {% if pred.acierto != 'Sí' %}wrong{% endif %}">
+                                {{ pred.predicho }}
+                            </span>
+                        </td>
+                        <td>
+                            <div class="conf-inner">
+                                <div class="conf-track">
+                                    <div class="conf-fill {% if pred.confianza < 0.5 %}low{% endif %}"
+                                         style="width:{% widthratio pred.confianza 1 100 %}%"></div>
+                                </div>
+                                <span class="conf-num {% if pred.confianza < 0.5 %}low{% endif %}">
+                                    {% widthratio pred.confianza 1 100 %}%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="top3-chips">
+                                {% for top in pred.top3 %}
+                                <span class="top3-chip {% if forloop.first %}first{% endif %}">
+                                    {{ top.enfermedad }} <strong>{% widthratio top.probabilidad 1 100 %}%</strong>
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </td>
+                    </tr>
                 {% endfor %}
-            </div>
+                </tbody>
+            </table>
+        </div>
         {% endif %}
 
-        <div class="center" style="margin-top:24px">
-            <a class="btn" href="/">Volver</a>
+        <div style="text-align: center; margin-top: 30px;">
+            <a class="btn" href="/">← Volver al inicio</a>
         </div>
     {% endif %}
 </div>
+<footer>
+    <small>SIDM - Sistema Inteligente de Diagnóstico Médico | Modelo BETO</small>
+</footer>
 </body>
 </html>
