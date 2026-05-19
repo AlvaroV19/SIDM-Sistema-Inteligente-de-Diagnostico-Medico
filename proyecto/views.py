@@ -14,6 +14,7 @@
 from django.shortcuts import render
 
 # ── Librerías base ────────────────────────────────────────────────────────────
+from pathlib import Path
 import os
 import re
 
@@ -42,6 +43,10 @@ from sklearn.metrics import (
     top_k_accuracy_score,
 )
 
+import joblib
+import pickle
+import json
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Constantes de configuración
 # ══════════════════════════════════════════════════════════════════════════════
@@ -56,13 +61,6 @@ BETO_CHECKPOINT = "dccuchile/bert-base-spanish-wwm-cased"
 # aumentar a 256 si el dataset contiene textos más largos.
 MAX_SEQ_LEN = 128
 
-# Learning rate bajo para fine-tuning: valores altos destruyen los pesos
-# preentrenados. El rango recomendado para BERT es [1e-5, 5e-5].
-
-
-# Épocas máximas. Con EarlyStopping y un LR bajo, BETO converge rápido
-# (generalmente 3-6 épocas). No es necesario un número alto.
-
 
 
 
@@ -71,15 +69,12 @@ MAX_SEQ_LEN = 128
 # para evitar recargar el tokenizador en cada request.
 _tokenizer_beto: BertTokenizerFast | None = None
 _label_encoder: LabelEncoder | None = None
-# ── Rutas de guardado ─────────────────────────────────────────────────────
-import joblib
-import pickle
-import json
 
-MODEL_DIR = os.path.expanduser(
-    "~/Documentos/PROJECTS/IA/SIDM"
-    "/django_deep_learning/models"
-)
+# Ruta base del proyecto
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Carpeta models
+MODEL_DIR = BASE_DIR / "models"
 
 # Crear directorio si no existe
 os.makedirs(MODEL_DIR, exist_ok=True)
@@ -424,12 +419,10 @@ def entrenar(request):
     global _label_encoder
 
     # ── 1. Carga del dataset ──────────────────────────────────────────────
-    base_path = os.path.expanduser(
-        "C:/Users/alvar/OneDrive/Escritorio/9no Semestre/Inteligencia Artificial/Proyecto IA/Version Final/SIDM/django_deep_learning/proyecto/dataset"
-    )
+    dataset_path = BASE_DIR / "dataset"
 
-    csv = pd.read_csv(f"{base_path}/ENFERMEDADES_SINTOMAS.csv")
-    csv_aux = pd.read_csv(f"{base_path}/ENFERMEDADES_SINTOMAS_redux.csv")
+    csv = pd.read_csv(f"{dataset_path}/ENFERMEDADES_SINTOMAS.csv")
+    csv_aux = pd.read_csv(f"{dataset_path}/ENFERMEDADES_SINTOMAS_redux.csv")
     data = pd.concat([csv, csv_aux], ignore_index=True)  # Duplicar para aumentar tamaño
     data.drop_duplicates(inplace=True)
     data.reset_index(drop=True, inplace=True)
