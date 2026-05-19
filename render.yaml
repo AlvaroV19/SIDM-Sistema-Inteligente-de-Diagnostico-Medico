@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sidm
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn proyecto.wsgi:application"
