@@ -17,7 +17,7 @@ git clone https://github.com/AlvaroV19/SIDM-Sistema-Inteligente-de-Diagnostico-M
 ## Paso 2: Ingresar a la carpeta del proyecto
 
 ```bash
-cd SIDM
+cd SIDM-Sistema-Inteligente-de-Diagnostico-Medico
 ```
 
 ## Paso 3: Crear el entorno virtual
@@ -39,13 +39,13 @@ python3 -m venv myenv
 ### Windows - PowerShell
 
 ```powershell
-.\myenv\Scripts\Activate.ps1
+.\myenv\Scripts\activate
 ```
 
 ### Windows - CMD
 
 ```cmd
-myenv\Scripts\activate.bat
+myenv\Scripts\activate
 ```
 
 ### Linux / macOS
@@ -91,20 +91,6 @@ Abrir en el navegador:
 
 ```txt
 http://127.0.0.1:8000/
-```
-
-# Estructura General del Proyecto
-
-```txt
-SIDM/
-│
-├── dataset/
-├── models/
-├── templates/
-├── static/
-├── requirements.txt
-├── manage.py
-└── README.md
 ```
 
 # Requisitos del Sistema
