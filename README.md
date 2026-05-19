@@ -3,6 +3,7 @@
 Aplicación web desarrollada con Django y técnicas de Deep Learning para el análisis, monitoreo y procesamiento inteligente de información mediante modelos de aprendizaje automático.
 
 **Autores:** Alvaro Felipe Avila Vidal, Carlos Eduardo Cabrera Miranda, Juan Jose Urbano Perdomo. 
+
 **Tecnologías principales:** Python, Django, TensorFlow, Transformers  
 **Versión de Django:** 4.1
 
