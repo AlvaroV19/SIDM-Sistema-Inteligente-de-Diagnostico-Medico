@@ -136,3 +136,5 @@ pip install -r requirements.txt
 - Inteligencia Artificial
 - Machine Learning
 - Transformers/NLP
+
+### Proyecto desplegado: https://organic-space-telegram-5wrv754wgq4cvx4p-8000.app.github.dev/
