@@ -1,4 +1,4 @@
-# SIDM-Sistema-Inteligente-de-Diagnostico-Medico
+# SIDM: Sistema Inteligente de Diagnostico Medico
 
 Aplicación web desarrollada con Django y técnicas de Deep Learning para el análisis, monitoreo y procesamiento inteligente de información mediante modelos de aprendizaje automático.
 
